@@ -36,6 +36,7 @@
         type: "columnrange",
         inverted: true,
         height: 200,
+        spacingRight: 25
       },
 
       title: {
@@ -65,6 +66,8 @@
           dataLabels: {
             enabled: true,
             format: substatData.isPercentage ? "{y:.1f}%" : "{y}",
+            crop: false,
+            overflow: "allow"
           },
           pointPadding: 0,
           groupPadding: 0,
