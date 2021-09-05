@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-col items-center py-8">
-	<h1 class="text-2xl text-center">Genshin 5⭐ artifact subroll ranges</h1>
+	<h1 class="text-2xl text-center">Genshin 5⭐ artifact substat ranges</h1>
 	<div class="grid xl:grid-cols-2 w-full gap-8 p-4">
 		{#each substatData as sd}
 			<Chart substatData={sd} />
