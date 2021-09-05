@@ -10,7 +10,7 @@
 			<Chart substatData={sd} />
 		{/each}
 	</div>
-	<a href="https://github.com/Seeker14491/genshin-substat-chart" target="_blank" class="underline pt-8">GitHub</a>
+	<a href="https://github.com/Seeker14491/genshin-substat-chart" target="_blank" rel="noreferrer" class="underline pt-8">GitHub</a>
 </div>
 
 <style global>
