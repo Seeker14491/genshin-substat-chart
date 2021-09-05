@@ -6,3 +6,9 @@
 {#each substatData as sd}
 	<Chart substatData={sd} />
 {/each}
+
+<style global>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+</style>
