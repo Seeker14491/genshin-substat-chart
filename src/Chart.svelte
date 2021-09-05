@@ -21,10 +21,13 @@
   const lowRoll = substatData.possibleRolls[0];
   const highRoll = substatData.possibleRolls[3];
   const seriesData = palette.map((color, i) => {
-    const low = lowRoll * (i + 1);
-    const high = highRoll * (i + 1);
-
-    return { low, high, color };
+    const numRolls = i + 1;
+    return {
+      x: numRolls,
+      low: lowRoll * numRolls,
+      high: highRoll * numRolls,
+      color
+    };
   });
 
   onMount(() => {
@@ -40,20 +43,21 @@
       },
 
       xAxis: {
-        categories: ["1", "2", "3", "4", "5", "6"],
         title: {
           text: "Rolls",
         },
+        tickInterval: 1
       },
 
       yAxis: {
         title: {
-          text: "Substat value",
+          text: `Substat value${substatData.isPercentage ? " (%)" : ""}`,
         },
-        // plotLines: [{value: 1000, width: 6, zIndex: 5, color: "#000000"}]
       },
 
-      tooltip: {},
+      tooltip: {
+        enabled: false
+      },
 
       plotOptions: {
         columnrange: {
@@ -73,7 +77,6 @@
 
       series: [
         {
-          name: "Roll range",
           data: seriesData,
         },
       ],
