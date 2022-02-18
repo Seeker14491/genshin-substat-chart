@@ -6,5 +6,5 @@ Charts for [Genshin Impact](https://genshin.mihoyo.com/) that visualize the rang
 
 ## Credits
 
-- honeyhunterworld.com: artifact data
+- Dimbreath's Datamines: [artifact data](https://docs.google.com/spreadsheets/d/1sYQrV5Yp_QTVEKMLWquMu0mDgHhOO_Rh2LfcWdS_Eno)
 - highcharts.com: chart library

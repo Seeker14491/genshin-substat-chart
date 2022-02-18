@@ -18,8 +18,8 @@
     "#7950F2",
   ];
 
-  const lowRoll = substatData.possibleRolls[0];
-  const highRoll = substatData.possibleRolls[3];
+  const lowRoll = 0.7 * substatData.maxRoll;
+  const highRoll = substatData.maxRoll;
   const seriesData = palette.map((color, i) => {
     const numRolls = i + 1;
     return {
@@ -65,7 +65,7 @@
           animation: false,
           dataLabels: {
             enabled: true,
-            format: substatData.isPercentage ? "{y:.1f}%" : "{y}",
+            format: substatData.isPercentage ? "{y:.1f}%" : "{y:.0f}",
             crop: false,
             overflow: "allow"
           },
